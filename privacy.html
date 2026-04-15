@@ -3,100 +3,260 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mucevher Sarayi - Gizlilik Politikasi</title>
+  <title>Mücevher Sarayı | Gizlilik Politikası</title>
+  <meta name="description" content="Mücevher Sarayı için Türkçe ve İngilizce gizlilik politikası.">
+  <link rel="canonical" href="https://erdemutkucan.com/privacy.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
   <style>
-    :root {
-      --bg: #1a0d06;
-      --panel: rgba(55, 28, 13, 0.92);
-      --line: rgba(232, 192, 105, 0.2);
-      --gold: #efc66a;
-      --cream: #f8ecd0;
-      --muted: #dccbaa;
+    .policy-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
     }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at top, rgba(214, 146, 57, 0.16), transparent 28%),
-        linear-gradient(180deg, #33190a, var(--bg));
-      color: var(--cream);
-    }
-    .wrap {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 28px 18px 56px;
-    }
-    .panel {
-      background: var(--panel);
+
+    .policy-card {
       border: 1px solid var(--line);
-      border-radius: 26px;
-      padding: 28px;
+      background: rgba(26, 13, 6, 0.38);
+      border-radius: 24px;
+      padding: 22px;
     }
-    a { color: var(--gold); }
-    h1, h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      margin: 0 0 14px;
+
+    .policy-card h2 {
+      margin: 0 0 12px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 36px;
+      color: var(--text);
     }
-    h1 { font-size: clamp(30px, 6vw, 46px); }
-    h2 { font-size: 24px; margin-top: 26px; }
-    p, li {
+
+    .policy-card h3 {
+      margin: 20px 0 10px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 26px;
+      color: var(--gold);
+    }
+
+    .policy-card p,
+    .policy-card li {
       color: var(--muted);
-      line-height: 1.7;
+      line-height: 1.75;
       font-size: 15px;
     }
-    .back { display: inline-block; margin-bottom: 16px; text-decoration: none; }
+
+    .policy-card ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .policy-meta {
+      color: var(--muted);
+      margin: 10px 0 0;
+    }
+
+    .contact-box {
+      margin-top: 10px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(239, 198, 106, 0.08);
+      border: 1px solid rgba(239, 198, 106, 0.16);
+    }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <a class="back" href="./index.html">← Ana sayfaya don</a>
-    <section class="panel">
-      <h1>Gizlilik Politikasi</h1>
-      <p>Son guncelleme: 14 Nisan 2026</p>
+  <main class="site-shell">
+    <header class="page-header">
+      <a class="back-link" href="./index.html">← Ana sayfaya dön</a>
+      <nav class="nav">
+        <a href="./index.html">Ana Sayfa</a>
+        <a href="./support.html">Destek</a>
+        <a href="./privacy.html" aria-current="page">Gizlilik</a>
+      </nav>
+    </header>
 
-      <p>
-        Mucevher Sarayi, oyunculara gorev odakli bir match-3 deneyimi sunar. Bu politika, uygulamanin hangi verileri
-        hangi amaclarla isledigini aciklamak icin hazirlanmistir.
-      </p>
+    <section class="page-panel">
+      <span class="eyebrow">Privacy</span>
+      <h1 class="page-title">Gizlilik Politikası / Privacy Policy</h1>
+      <p class="policy-meta">Son güncelleme / Last updated: April 12, 2026</p>
 
-      <h2>1. Yerel oyun verileri</h2>
-      <p>Asagidaki bilgiler cihaz uzerinde saklanabilir:</p>
-      <ul>
-        <li>tamamlanan seviyeler ve ilerleme durumu</li>
-        <li>yildiz, altin, elmas ve can durumu</li>
-        <li>booster envanteri ve oyun ici tercihlerin</li>
-        <li>dil, muzik ve arayuz secimleri</li>
-      </ul>
+      <div class="policy-columns">
+        <article class="policy-card">
+          <h2>English</h2>
+          <p>
+            At <strong>Mucevher Sarayi</strong>, we value your privacy. This Privacy Policy explains what data may be processed
+            when you use our application, for what purposes it may be used, and your rights regarding that data.
+          </p>
 
-      <h2>2. Ucuncu taraf servisler</h2>
-      <p>Uygulama asagidaki servisleri kullanabilir:</p>
-      <ul>
-        <li>Apple App Store / StoreKit: uygulama ici satin alma islemleri icin</li>
-        <li>Google Mobile Ads: banner, odullu reklam ve gecis reklamlari icin</li>
-      </ul>
-      <p>
-        Bu servisler kendi gizlilik politikalarina gore teknik cihaz verileri, tanimlayicilar, reklam etkilesimleri
-        ve performans tanilari isleyebilir.
-      </p>
+          <h3>1. Information We May Collect</h3>
+          <p>While you use the application, the following types of data may be processed:</p>
+          <ul>
+            <li>Game progress data</li>
+            <li>Level, score, star, life, gold, gem, and inventory information</li>
+            <li>In-app purchase status information</li>
+            <li>Ad display and ad interaction information</li>
+            <li>Device identifiers and technical device information</li>
+            <li>Crash logs and performance data</li>
+            <li>Approximate location data, such as general location inferred from IP address, which may be processed by third-party advertising providers</li>
+          </ul>
 
-      <h2>3. Reklam ve olcumleme</h2>
-      <p>
-        Reklam sunumu, reklam alaka duzeyi, sahtekarligin onlenmesi ve performans olcumlemesi icin Google Mobile Ads
-        tarafindan belirli teknik veriler islenebilir.
-      </p>
+          <h3>2. How We Use Information</h3>
+          <p>Collected or processed information may be used for the following purposes:</p>
+          <ul>
+            <li>To provide gameplay and save progress</li>
+            <li>To manage in-app purchases</li>
+            <li>To display advertisements and measure ad performance</li>
+            <li>To improve app performance</li>
+            <li>To detect errors and resolve technical issues</li>
+            <li>To ensure security, prevent fraud, and maintain service integrity</li>
+          </ul>
 
-      <h2>4. Cocuklarin gizliligi</h2>
-      <p>
-        Uygulama hassas kisisel verileri toplamayi hedeflemez. Ebeveyn veya yasal temsilciler, bir endiseleri olursa
-        destek kanali uzerinden iletisime gecebilir.
-      </p>
+          <h3>3. Third-Party Services</h3>
+          <p>The application may use the following third-party services:</p>
+          <ul>
+            <li><strong>Google AdMob / Google Mobile Ads SDK</strong> for banner ads, rewarded ads, and interstitial ads</li>
+            <li><strong>Apple StoreKit</strong> for in-app purchases</li>
+          </ul>
+          <p>These providers may process data according to their own privacy policies.</p>
+          <p><a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
+          <p><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></p>
 
-      <h2>5. Iletisim</h2>
-      <p>
-        Destek ve gizlilik konulari icin <a href="./support.html">destek sayfasini</a> kullanabilirsin.
-      </p>
+          <h3>4. Advertising</h3>
+          <p>
+            Our application may display advertisements. Advertising providers may process certain technical data for ad delivery,
+            measurement, and fraud prevention. Where required, user consent and privacy choices related to advertising may be collected and managed.
+          </p>
+
+          <h3>5. In-App Purchases</h3>
+          <p>
+            In-app purchases are processed through Apple’s StoreKit infrastructure. Your payment information is not directly stored by the application
+            developer; payment transactions are handled by Apple.
+          </p>
+
+          <h3>6. Data Storage</h3>
+          <p>
+            Some data may be stored locally on the device. Game progress, settings, and certain usage-related data may be kept on the device so the
+            application can function properly. Data processed by third-party services is subject to their own retention policies.
+          </p>
+
+          <h3>7. Children’s Privacy</h3>
+          <p>
+            The application is intended for a general audience. Where required, advertising and data processing flows are managed in accordance with applicable laws and regulations.
+          </p>
+
+          <h3>8. Your Rights</h3>
+          <p>
+            Depending on your country or region, you may have certain rights regarding your personal data. These may include the right to request access,
+            correction, deletion, or objection to certain processing activities.
+          </p>
+
+          <h3>9. Contact</h3>
+          <div class="contact-box">
+            <p>If you have any questions about this Privacy Policy, you may contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:erdemutkucan@gmail.com">erdemutkucan@gmail.com</a></p>
+          </div>
+
+          <h3>10. Changes</h3>
+          <p>
+            This Privacy Policy may be updated from time to time. The latest version will be published on this page. Your continued use of the application means you accept the updated policy.
+          </p>
+        </article>
+
+        <article class="policy-card">
+          <h2>Türkçe</h2>
+          <p>
+            <strong>Mücevher Sarayı</strong> olarak gizliliğinize önem veriyoruz. Bu Gizlilik Politikası, uygulamamızı kullanırken hangi verilerin
+            işlenebileceğini, bu verilerin ne amaçla kullanılabileceğini ve haklarınızı açıklar.
+          </p>
+
+          <h3>1. Toplanan Bilgiler</h3>
+          <p>Uygulama kullanımınız sırasında aşağıdaki veri türleri işlenebilir:</p>
+          <ul>
+            <li>Oyun ilerleme verileri</li>
+            <li>Seviye, skor, yıldız, can, altın, elmas ve envanter bilgileri</li>
+            <li>Uygulama içi satın alma durum bilgileri</li>
+            <li>Reklam gösterimi ve reklam etkileşim bilgileri</li>
+            <li>Cihaz tanımlayıcıları ve teknik cihaz bilgileri</li>
+            <li>Çökme kayıtları ve performans verileri</li>
+            <li>Yaklaşık konum bilgisi, örneğin IP adresinden türetilen genel konum, üçüncü taraf reklam sağlayıcıları tarafından işlenebilir</li>
+          </ul>
+
+          <h3>2. Verilerin Kullanım Amaçları</h3>
+          <p>Toplanan veya işlenen bilgiler aşağıdaki amaçlarla kullanılabilir:</p>
+          <ul>
+            <li>Oyun deneyimini sunmak ve ilerlemeyi kaydetmek</li>
+            <li>Uygulama içi satın alma işlemlerini yönetmek</li>
+            <li>Reklam göstermek ve reklam performansını ölçmek</li>
+            <li>Uygulama performansını iyileştirmek</li>
+            <li>Hataları tespit etmek ve teknik sorunları gidermek</li>
+            <li>Güvenlik, sahtekarlık önleme ve hizmet bütünlüğünü sağlamak</li>
+          </ul>
+
+          <h3>3. Üçüncü Taraf Hizmetler</h3>
+          <p>Uygulama aşağıdaki üçüncü taraf hizmetleri kullanabilir:</p>
+          <ul>
+            <li><strong>Google AdMob / Google Mobile Ads SDK</strong> banner reklamlar, ödüllü reklamlar ve geçiş reklamları için</li>
+            <li><strong>Apple StoreKit</strong> uygulama içi satın alma işlemleri için</li>
+          </ul>
+          <p>Bu hizmet sağlayıcılar kendi gizlilik politikalarına göre veri işleyebilir.</p>
+          <p><a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a></p>
+          <p><a href="https://www.apple.com/legal/privacy/">Apple Gizlilik Politikası</a></p>
+
+          <h3>4. Reklamlar</h3>
+          <p>
+            Uygulamamız reklam gösterebilir. Reklam sağlayıcıları, reklam sunumu, ölçümleme ve dolandırıcılığı önleme amacıyla belirli teknik verileri
+            işleyebilir. Gerekli bölgelerde kullanıcıdan reklam gizliliği ve onay tercihleri alınabilir.
+          </p>
+
+          <h3>5. Uygulama İçi Satın Alımlar</h3>
+          <p>
+            Uygulama içi satın alma işlemleri Apple tarafından sağlanan StoreKit altyapısı üzerinden gerçekleştirilir. Ödeme bilgileriniz uygulama
+            geliştiricisi tarafından doğrudan saklanmaz; ilgili ödeme işlemleri Apple tarafından yönetilir.
+          </p>
+
+          <h3>6. Verilerin Saklanması</h3>
+          <p>
+            Bazı veriler cihaz üzerinde yerel olarak saklanabilir. Oyun ilerlemesi, ayarlar ve bazı kullanım verileri uygulamanın düzgün çalışması için
+            cihazda tutulabilir. Üçüncü taraf hizmetler tarafından işlenen verilerin saklama süreleri kendi politikalarına tabidir.
+          </p>
+
+          <h3>7. Çocukların Gizliliği</h3>
+          <p>
+            Uygulama genel kitleye yöneliktir. Gerekli durumlarda reklam ve veri işleme akışları yürürlükteki mevzuata uygun şekilde yönetilir.
+          </p>
+
+          <h3>8. Haklarınız</h3>
+          <p>
+            Bulunduğunuz ülke veya bölgeye bağlı olarak kişisel verilerinizle ilgili belirli haklara sahip olabilirsiniz. Bunlar arasında bilgi talep etme,
+            düzeltme, silme veya belirli işleme faaliyetlerine itiraz etme hakkı bulunabilir.
+          </p>
+
+          <h3>9. İletişim</h3>
+          <div class="contact-box">
+            <p>Bu Gizlilik Politikası ile ilgili sorularınız için bizimle iletişime geçebilirsiniz:</p>
+            <p><strong>E-posta:</strong> <a href="mailto:erdemutkucan@gmail.com">erdemutkucan@gmail.com</a></p>
+          </div>
+
+          <h3>10. Değişiklikler</h3>
+          <p>
+            Bu Gizlilik Politikası zaman zaman güncellenebilir. Güncel sürüm bu sayfada yayınlanır. Uygulamayı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.
+          </p>
+        </article>
+      </div>
     </section>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Erdem Utkucan</strong>
+        <p>Mücevher Sarayı için resmi gizlilik ve politika bilgileri.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">Ana Sayfa</a>
+        <a href="./support.html">Destek</a>
+        <a href="mailto:erdemutkucan@gmail.com">erdemutkucan@gmail.com</a>
+      </div>
+    </footer>
   </main>
 </body>
 </html>

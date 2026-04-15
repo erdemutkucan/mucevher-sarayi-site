@@ -3,88 +3,103 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mucevher Sarayi - Destek</title>
-  <style>
-    :root {
-      --bg: #180c05;
-      --panel: rgba(55, 28, 13, 0.92);
-      --line: rgba(232, 192, 105, 0.2);
-      --gold: #efc66a;
-      --cream: #f8ecd0;
-      --muted: #dccbaa;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at top, rgba(214, 146, 57, 0.16), transparent 28%),
-        linear-gradient(180deg, #33190a, var(--bg));
-      color: var(--cream);
-    }
-    .wrap {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 28px 18px 56px;
-    }
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 26px;
-      padding: 28px;
-    }
-    a { color: var(--gold); }
-    h1, h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      margin: 0 0 14px;
-    }
-    h1 { font-size: clamp(30px, 6vw, 46px); }
-    h2 { font-size: 24px; margin-top: 26px; }
-    p, li {
-      color: var(--muted);
-      line-height: 1.7;
-      font-size: 15px;
-    }
-    .back { display: inline-block; margin-bottom: 16px; text-decoration: none; }
-    .faq {
-      margin: 0;
-      padding-left: 18px;
-    }
-  </style>
+  <title>Mücevher Sarayı | Destek</title>
+  <meta name="description" content="Mücevher Sarayı için resmi destek sayfası. Reklam, satın alma ve teknik yardım bilgileri.">
+  <link rel="canonical" href="https://erdemutkucan.com/support.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <main class="wrap">
-    <a class="back" href="./index.html">← Ana sayfaya don</a>
-    <section class="panel">
-      <h1>Destek</h1>
-      <p>Mucevher Sarayi ile ilgili yardim, teknik sorun ve geri bildirimler icin bu sayfa kullanilir.</p>
+  <main class="site-shell">
+    <header class="page-header">
+      <a class="back-link" href="./index.html">← Ana sayfaya dön</a>
+      <nav class="nav">
+        <a href="./index.html">Ana Sayfa</a>
+        <a href="./support.html" aria-current="page">Destek</a>
+        <a href="./privacy.html">Gizlilik</a>
+      </nav>
+    </header>
 
-      <h2>Sik sorulan konular</h2>
-      <ul class="faq">
-        <li>Reklamlar neden hemen gorunmeyebilir?</li>
-        <li>Uygulama ici satin alma geri yukleme nasil calisir?</li>
-        <li>Can haklari neden azalir ve nasil dolar?</li>
-        <li>Haritadaki kilitli bolgeler hangi sirayla acilir?</li>
-      </ul>
-
-      <h2>Destek adimlari</h2>
-      <p>Bir sorun bildirirken su bilgileri paylasman yararli olur:</p>
-      <ul class="faq">
-        <li>uygulama surumu</li>
-        <li>cihaz modeli ve iOS surumu</li>
-        <li>sorunun hangi bolumde veya ekranda oldugu</li>
-        <li>mumkunse ekran goruntusu</li>
-      </ul>
-
-      <h2>Iletisim</h2>
-      <p>
-        Gevsek bir cozum yerine hizli kurulum hedefledim; bu sayfayi yayinlamadan once gercek destek e-postani eklemen iyi olur.
-        Ornek: <strong>support@senindomainin.com</strong>
+    <section class="page-panel">
+      <span class="eyebrow">Support</span>
+      <h1 class="page-title">Mücevher Sarayı Destek</h1>
+      <p class="page-lead">
+        Reklamlar, satın alma geri yükleme, bölüm sorunları veya teknik problemler için bu resmi destek akışını kullanabilirsin.
       </p>
 
-      <h2>Surum</h2>
-      <p>Ilk yayin hatti: 1.0</p>
+      <div class="content-grid">
+        <article class="info-card">
+          <span class="card-kicker">Need Help?</span>
+          <h2>İletişim</h2>
+          <p>Doğrudan destek için bize e-posta gönderebilirsin.</p>
+          <a class="btn btn-primary" href="mailto:erdemutkucan@gmail.com?subject=Mucevher%20Sarayi%20Destek">E-posta Gönder</a>
+        </article>
+
+        <article class="info-card">
+          <span class="card-kicker">Include</span>
+          <h2>Sorun Bildirirken</h2>
+          <ul class="clean-list">
+            <li>Uygulama sürümü</li>
+            <li>Cihaz modeli ve iOS sürümü</li>
+            <li>Sorunun hangi ekranda olduğu</li>
+            <li>Mümkünse ekran görüntüsü</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <span class="card-kicker">Fast Answers</span>
+          <h2>Yaygın Konular</h2>
+          <ul class="clean-list">
+            <li>Reklamlar ilk kurulumda neden geç gelebilir?</li>
+            <li>Uygulama içi satın alma geri yükleme nasıl çalışır?</li>
+            <li>Can hakları neden azalır ve nasıl dolar?</li>
+            <li>Bölümler neden kilitli görünebilir?</li>
+          </ul>
+        </article>
+      </div>
+
+      <section class="faq-block">
+        <div class="section-heading">
+          <span class="eyebrow">FAQ</span>
+          <h2>Sık Sorulan Sorular</h2>
+        </div>
+
+        <div class="faq-item">
+          <h3>Reklamlar neden bazen hemen görünmüyor?</h3>
+          <p>
+            Yeni kurulum, yeni yayın veya AdMob sınırları nedeniyle reklamlar bazen geç yüklenebilir. Ağ bağlantısını ve uygulamanın en güncel sürümünü kontrol et.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Satın alma geri yükleme nasıl çalışır?</h3>
+          <p>
+            Aynı Apple ID ile yapılan satın alımlar uygulama içindeki ilgili geri yükleme akışı üzerinden tekrar eşleştirilebilir.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Bir bölümde sorun yaşarsam ne göndermeliyim?</h3>
+          <p>
+            Seviye adı veya numarası, cihaz modeli, iOS sürümü ve mümkünse ekran görüntüsü sorunun daha hızlı incelenmesini sağlar.
+          </p>
+        </div>
+      </section>
     </section>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Erdem Utkucan</strong>
+        <p>Mücevher Sarayı için resmi destek kanalı.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">Ana Sayfa</a>
+        <a href="./privacy.html">Gizlilik</a>
+        <a href="mailto:erdemutkucan@gmail.com">erdemutkucan@gmail.com</a>
+      </div>
+    </footer>
   </main>
 </body>
 </html>
