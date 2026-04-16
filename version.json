@@ -1,0 +1,11 @@
+{
+  "minimumBuild": 1,
+  "latestBuild": 1,
+  "minimumVersion": "61.0.0",
+  "latestVersion": "61.0.0",
+  "appStoreUrl": "https://apps.apple.com/app/id6760788670",
+  "titleTR": "Guncelleme Gerekli",
+  "messageTR": "Oyuna devam etmek icin daha yeni bir surum gerekiyor. Lutfen App Store'dan guncelle.",
+  "titleEN": "Update Required",
+  "messageEN": "A newer version of the game is required to continue. Please update from the App Store."
+}
