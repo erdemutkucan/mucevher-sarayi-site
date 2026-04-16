@@ -1,8 +1,8 @@
 {
-  "minimumBuild": 1,
-  "latestBuild": 1,
-  "minimumVersion": "61.0.0",
-  "latestVersion": "61.0.0",
+  "minimumBuild": 3,
+  "latestBuild": 3,
+  "minimumVersion": "63.0.0",
+  "latestVersion": "63.0.0",
   "appStoreUrl": "https://apps.apple.com/app/id6760788670",
   "titleTR": "Guncelleme Gerekli",
   "messageTR": "Oyuna devam etmek icin daha yeni bir surum gerekiyor. Lutfen App Store'dan guncelle.",
