@@ -2,12 +2,253 @@
 <html lang="tr">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=/mucevher-sarayi/support.html">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Destek Yonlendiriliyor</title>
-  <link rel="canonical" href="https://erdemutkucan.com/mucevher-sarayi/support.html">
+  <title>Mucevher Sarayi | Destek / Support</title>
+  <meta name="description" content="Mucevher Sarayi icin Turkce ve English resmi destek sayfasi.">
+  <link rel="canonical" href="https://erdemutkucan.com/support.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .lang-switch {
+      display: inline-flex;
+      gap: 8px;
+      margin: 18px 0 0;
+      padding: 6px;
+      border-radius: 999px;
+      background: rgba(239, 198, 106, 0.08);
+      border: 1px solid rgba(239, 198, 106, 0.16);
+    }
+
+    .lang-switch button {
+      border: none;
+      border-radius: 999px;
+      padding: 10px 16px;
+      background: transparent;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .lang-switch button.active {
+      background: linear-gradient(135deg, #f4d688, #d49a44);
+      color: #261403;
+    }
+
+    .support-panel {
+      margin-top: 22px;
+    }
+
+    .support-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .support-card {
+      border: 1px solid var(--line);
+      background: rgba(26, 13, 6, 0.38);
+      border-radius: 24px;
+      padding: 22px;
+    }
+
+    .support-card h2 {
+      margin: 8px 0 10px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 36px;
+      color: var(--text);
+    }
+
+    .support-card h3 {
+      margin: 0 0 10px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 28px;
+      color: var(--gold);
+    }
+
+    .support-card p,
+    .support-card li {
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 15px;
+    }
+
+    .support-card ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .faq-block {
+      margin-top: 18px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .faq-item {
+      padding: 18px 20px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <p>Yonlendiriliyor... <a href="/mucevher-sarayi/support.html">Destek sayfasi</a></p>
+  <main class="site-shell">
+    <header class="page-header">
+      <a class="back-link" href="./index.html">← Ana sayfaya don</a>
+      <nav class="nav">
+        <a href="./index.html">Ana Sayfa</a>
+        <a href="./support.html" aria-current="page">Destek</a>
+        <a href="./privacy.html">Gizlilik</a>
+        <a href="./app-ads.txt">app-ads.txt</a>
+      </nav>
+    </header>
+
+    <section class="page-panel">
+      <span class="eyebrow">Support</span>
+      <h1 class="page-title">Destek / Support</h1>
+      <p class="page-lead">
+        Mucevher Sarayi icin resmi destek sayfasi. Reklamlar, satin alimlar, teknik sorunlar ve bolum problemleri icin kullanabilirsin.
+      </p>
+
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="active" type="button" data-lang-btn="tr">Turkce</button>
+        <button type="button" data-lang-btn="en">English</button>
+      </div>
+
+      <section class="support-panel" data-lang="tr">
+        <div class="support-grid">
+          <article class="support-card">
+            <span class="card-kicker">Iletisim</span>
+            <h2>Destek Al</h2>
+            <p>Dogrudan destek icin bize e-posta gonderebilirsin.</p>
+            <p><a class="btn btn-primary" href="mailto:erdemutkucan@gmail.com?subject=Mucevher%20Sarayi%20Destek">E-posta Gonder</a></p>
+          </article>
+
+          <article class="support-card">
+            <span class="card-kicker">Gonderirken</span>
+            <h2>Bilgi Ekleyin</h2>
+            <ul>
+              <li>Uygulama surumu</li>
+              <li>Cihaz modeli ve iOS surumu</li>
+              <li>Sorunun hangi ekranda oldugu</li>
+              <li>Mumkunse ekran goruntusu veya video</li>
+            </ul>
+          </article>
+
+          <article class="support-card">
+            <span class="card-kicker">Hizli Konular</span>
+            <h2>Sik Karsilasilanlar</h2>
+            <ul>
+              <li>Reklamlar neden gec gelebilir?</li>
+              <li>Satin alim geri yukleme nasil calisir?</li>
+              <li>Bolum neden acilmiyor veya bozuluyor?</li>
+              <li>Ilerleme kaydi gorunmuyorsa ne yapmaliyim?</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="faq-block">
+          <article class="faq-item">
+            <h3>Reklamlar neden hemen gorunmeyebilir?</h3>
+            <p>Yeni kurulum, yayin gecikmesi veya AdMob sinirlari nedeniyle reklamlar bazen gec yuklenebilir. Ag baglantisini ve uygulama surumunu kontrol et.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Satin alma geri yukleme nasil calisir?</h3>
+            <p>Ayni Apple ID ile yapilan satin alimlar, uygulama icindeki geri yukleme akisi uzerinden tekrar eslestirilebilir.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Bolum sorunu bildirirken ne gondermeliyim?</h3>
+            <p>Seviye adi veya numarasi, cihaz modeli, iOS surumu ve mumkunse ekran goruntusu sorunun daha hizli incelenmesini saglar.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="support-panel hidden" data-lang="en">
+        <div class="support-grid">
+          <article class="support-card">
+            <span class="card-kicker">Contact</span>
+            <h2>Get Support</h2>
+            <p>You can contact us directly by email for support.</p>
+            <p><a class="btn btn-primary" href="mailto:erdemutkucan@gmail.com?subject=Mucevher%20Sarayi%20Support">Send Email</a></p>
+          </article>
+
+          <article class="support-card">
+            <span class="card-kicker">Include</span>
+            <h2>Helpful Details</h2>
+            <ul>
+              <li>App version</li>
+              <li>Device model and iOS version</li>
+              <li>Which screen the issue happened on</li>
+              <li>A screenshot or video if possible</li>
+            </ul>
+          </article>
+
+          <article class="support-card">
+            <span class="card-kicker">Quick Topics</span>
+            <h2>Common Issues</h2>
+            <ul>
+              <li>Why can ads appear with a delay?</li>
+              <li>How does purchase restore work?</li>
+              <li>Why is a level not opening or behaving incorrectly?</li>
+              <li>What should I do if progress looks missing?</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="faq-block">
+          <article class="faq-item">
+            <h3>Why might ads not appear immediately?</h3>
+            <p>Ads can load with a delay after a fresh install, a recent release, or due to AdMob serving limits. Please check network connectivity and app version first.</p>
+          </article>
+          <article class="faq-item">
+            <h3>How does purchase restore work?</h3>
+            <p>Purchases made with the same Apple ID can be matched again through the restore flow inside the app.</p>
+          </article>
+          <article class="faq-item">
+            <h3>What should I send when reporting a level problem?</h3>
+            <p>The level name or number, device model, iOS version, and a screenshot if possible will help us review the issue faster.</p>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Erdem Utkucan</strong>
+        <p>Mucevher Sarayi resmi destek sayfasi.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">Ana Sayfa</a>
+        <a href="./privacy.html">Gizlilik</a>
+        <a href="./app-ads.txt">app-ads.txt</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const langButtons = document.querySelectorAll("[data-lang-btn]");
+    const langPanels = document.querySelectorAll("[data-lang]");
+
+    function setLang(lang) {
+      langButtons.forEach((button) => {
+        button.classList.toggle("active", button.dataset.langBtn === lang);
+      });
+      langPanels.forEach((panel) => {
+        panel.classList.toggle("hidden", panel.dataset.lang !== lang);
+      });
+      document.documentElement.lang = lang === "en" ? "en" : "tr";
+    }
+
+    langButtons.forEach((button) => {
+      button.addEventListener("click", () => setLang(button.dataset.langBtn));
+    });
+  </script>
 </body>
 </html>
